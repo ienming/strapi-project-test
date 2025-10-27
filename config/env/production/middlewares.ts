@@ -1,4 +1,4 @@
-module.exports = ({ env }) => [
+export default [
   'strapi::logger',
   'strapi::errors',
   {
@@ -19,6 +19,7 @@ module.exports = ({ env }) => [
             "'self'",
             'data:',
             'blob:',
+            'res.cloudinary.com',
             // Add other necessary media sources if needed
           ],
           upgradeInsecureRequests: null,
